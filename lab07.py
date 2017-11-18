@@ -1,9 +1,9 @@
-# Student(s): (insert name here)
+#!/usr/bin/env python3
 
-# Did you read the comments? Nobody ever read these comments.
-# If you read them they might have some useful hints. 
-# Good job if you read these comments. 
-# This is totally Tim writing...can you tell?
+import sys
+
+# Student(s): (insert name here)
+# Make sure to read the comments for each function. 
 
 def createWordList(filename):
 	'''
@@ -38,13 +38,14 @@ def getWordPoints(myWord, letterPoints):
 	'''
 
 
-	return "stub"
+	return -420
 
-def outputWordPointPairs(pointWordList, toFile):
+def outputWordPointPairs(pointWordList, myLetters, toFile):
 	'''
 		Outputs the contents of pointWordList in a specified format to the terminal or a file.
 		
 		:param pointWordList: a list of tuples to output to 
+		:param myLetters: a string that you will name the file with if toFile is True
 		:param toFile: a boolean to decide whether I want to print to file or not. If True then output to file else output to terminal.  
 
 		:return: None
@@ -60,6 +61,11 @@ def scrabbleWords(myLetters):
 	:return: None
 	'''
 
+if __name__=="__main__":
+  if len(sys.argv) >= 2:
+  	scrabbleWords(sys.argv[1])
+  else:
+  	print("Invalid input please try again")
 
 
-#this is the bottom of the file...for now. 
+#this is the bottom of the file. Congrats you found it. 
