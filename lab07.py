@@ -40,14 +40,14 @@ def getWordPoints(myWord, letterPoints):
 
 	return -420
 
-def outputWordPointPairs(pointWordList, myLetters, toFile):
+def outputWordPointPairs(pointWordList, filename, toFile):
 	'''
 	Outputs the contents of pointWordList in a specified format to the terminal 
 	or a file.
 		
 	:param pointWordList: a list of tuples to output to, with each tuple 
 	 containing a (pointValue, word) pair
-	:param myLetters: a string that you will name the file with if toFile is True
+	:param filename: a string that you will name the file with if toFile is True
 	:param toFile: a boolean to decide whether I want to print to file or not. If True then output to file else output to terminal.  
 
 	:return: None
