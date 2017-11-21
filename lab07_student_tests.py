@@ -18,10 +18,10 @@ def test_createWordList_1():
 from lab07 import canWeMakeIt
 
 def test_canWeMakeIt_0():
-  assert(canWeMakeIt('ape',['p', 'a', 'e']) == True)
+  assert(canWeMakeIt('ape','pae') == True)
 
 def test_canWeMakeIt_1():
-  assert(canWeMakeIt('ape',['p', 'a', 'e', 'l']) == True)
+  assert(canWeMakeIt('ape','pael') == True)
 
 
 #You will write your own test cases. 
